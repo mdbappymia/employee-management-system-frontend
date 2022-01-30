@@ -104,7 +104,9 @@ const InsertEmployeeCSV = () => {
         )}
       </CSVReader>
       <div className="text-center mt-3">
-        <Button onClick={handleSubmitEmployees}>Insert Employee</Button>
+        <Button onClick={handleSubmitEmployees}>
+          <i className="fas fa-user-plus"></i> Insert
+        </Button>
       </div>
     </>
   );

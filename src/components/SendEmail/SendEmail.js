@@ -34,7 +34,9 @@ const SendEmail = () => {
 
   return (
     <Container className="my-4">
-      <h1 className="text-center my-4">Send Email</h1>
+      <h1 className="text-center my-4">
+        <span className="border-bottom border-2 border-info">Send Email</span>
+      </h1>
       <form className="form-control" onSubmit={handleSubmit(onSubmit)}>
         <label>Email</label>
         <input
@@ -70,7 +72,7 @@ const SendEmail = () => {
 
         <br />
         <Button variant="primary" type="submit">
-          Send
+          <i className="fas fa-paper-plane"></i> Send
         </Button>
       </form>
       <div className="text-center my-4">

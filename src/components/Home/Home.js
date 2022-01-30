@@ -23,7 +23,9 @@ const Home = () => {
       </h1>
       <div className="mb-3 d-flex justify-content-end">
         <Link to="/sendEmail">
-          <Button>Send Email Selected Employee</Button>
+          <Button>
+            <i className="far fa-envelope"></i> Send Email Selected Employee
+          </Button>
         </Link>
       </div>
       {!employees.length ? (

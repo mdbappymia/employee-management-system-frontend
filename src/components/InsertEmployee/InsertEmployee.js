@@ -34,7 +34,11 @@ const InsertEmployee = () => {
   return (
     <Container>
       <div className="w-100 w-lg-50 insert-employee-form-container">
-        <h1 className="text-center my-5">Insert a new employee</h1>
+        <h1 className="text-center my-5">
+          <span className="border-bottom border-2 border-info">
+            Insert a new employee
+          </span>
+        </h1>
         <form className="form-control" onSubmit={handleSubmit(onSubmit)}>
           <input
             placeholder="First name"
@@ -64,7 +68,7 @@ const InsertEmployee = () => {
 
           <br />
           <Button variant="primary" type="submit">
-            Insert Employee
+            <i className="fas fa-user-plus"></i> Insert
           </Button>
         </form>
         <div className="w-lg-50 w-100 my-5 m-auto">
