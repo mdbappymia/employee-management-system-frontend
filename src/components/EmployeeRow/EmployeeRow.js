@@ -9,7 +9,6 @@ const EmployeeRow = ({ employee, i }) => {
   const handleOnChange = (e) => {
     setIsChecked(!isChecked);
     if (!isChecked) {
-      //   console.log(e.target.value);
       setEmailCollection([...emailCollection, e.target.value]);
     } else {
       const remain = emailCollection.filter(

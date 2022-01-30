@@ -13,7 +13,6 @@ const SendEmail = () => {
     reset,
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
     const isSendEmail = window.confirm("Are you sure?");
     if (isSendEmail) {
       fetch("http://localhost:5000/sendEmail", {
@@ -25,7 +24,6 @@ const SendEmail = () => {
       })
         .then((res) => res.json())
         .then((result) => {
-          console.log(result);
           if (result.messageId) {
             alert("Message send successfully");
             reset();

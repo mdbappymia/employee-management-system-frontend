@@ -5,6 +5,7 @@ import InsertEmployee from "./components/InsertEmployee/InsertEmployee";
 import AppBar from "./components/AppBar/AppBar";
 import ContextProvider from "./context/ContextProvider";
 import SendEmail from "./components/SendEmail/SendEmail";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/insertEmployee" element={<InsertEmployee />} />
         <Route path="/sendEmail" element={<SendEmail />} />
       </Routes>
+      <Footer />
     </ContextProvider>
   );
 }
